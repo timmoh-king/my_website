@@ -1,0 +1,70 @@
+:root{
+    --mainColor: #0b4b6f;
+    --secondaryColor: #125b6a;
+    --backgroundColor: #f0f6f9;
+
+    --borderColor: #ee6c4d;
+
+    --mainText: #0b4b6f;
+    --secondaryText: #3dac94;
+    --normalText: #262429;
+}
+
+html, body{
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, strong{
+    color: var(--mainText);
+    font-family: 'Inter', sans-serif;
+}
+
+label, input, textarea{
+    color: var(--secondaryText);
+    font-family: 'Poppins', sans-serif;
+}
+
+p, li, span{
+    color: var(--normalText);
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {font-size: 56px;}
+h2 {font-size: 36px;}
+h3 {font-size: 28px;}
+h4 {font-size: 24px;}
+h5 {font-size: 20px;}
+h6 {font-size: 16px;}
+
+a{
+    text-decoration: none;
+    color: #17a2b8;
+}
+
+ul{
+    list-style: none;
+}
+
+.s1{
+    background-color: var(--backgroundColor);
+    border-bottom: 1px solid var(--borderColor);
+    overflow: auto;
+}
+
+.s2{
+    background-color: var(--secondaryColor);
+    border-bottom: 1px solid var(--borderColor);
+    overflow: auto;
+}
+
+.main-container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1200px){
+    .main-container{
+        width: 95%;
+    }
+}
