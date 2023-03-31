@@ -12,6 +12,7 @@
     --normalText: #262429;
 
     --themeDotBorder: #24292e;
+    --buttonColor: black;
 }
 
 html,
@@ -100,7 +101,7 @@ ul {
 
 .greeting-wrapper {
     display: grid;
-    min-width: 2em;
+    min-width: 6em;
     text-align: center;
     align-content: center;
     background-color: var(--mainColor);
@@ -320,7 +321,6 @@ ul {
     gap: 20px;
     justify-content: center;
     padding-top: 15px;
-    padding-bottom: 50px;
 }
 
 .post{
@@ -357,6 +357,42 @@ ul {
 .post-intro{
     color: var(--normalText);
     font-size: 14px;
+}
+
+#contact-form{
+    display: block;
+    max-width: 600px;
+    margin: 0 auto;
+    border: 1px solid var(--borderColor);
+    padding: 15px;
+    border-radius: 5px;
+    background-color: var(--previewBackground);
+    margin-bottom: 50px;
+}
+
+#contact-form label{
+    line-height: 2em;
+}
+
+.input-field{
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: var(--previewShadow);
+    border-radius: 5px;
+    border: 1px solid var(--mainColor);
+    font-size: 14px;
+}
+
+#submit_btn{
+    margin-top: 10px;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color:#fff;
+    background-color: var(--buttonColor);
+    border: none;
+    border-radius: 5px;
 }
 
 @media screen and (max-width: 1200px) {
