@@ -3,12 +3,12 @@
     --secondaryColor: #125b6a;
     --backgroundColor: #f0f6f9;
     --previewBackground: rgb(251, 249, 243, 0.8);
-    --previewShadow: #f0ead6;
+    --previewShadow: #e3eeee;
 
-    --borderColor: #ee6c4d;
+    --borderColor: #bd7361;
 
     --mainText: #0b4b6f;
-    --secondaryText: #3dac94;
+    --secondaryText: #629cb8;
     --normalText: #262429;
 
     --themeDotBorder: #24292e;
@@ -19,6 +19,10 @@ html,
 body {
     padding: 0;
     margin: 0;
+}
+
+body *{
+    transition: 0.3s;
 }
 
 h1,
@@ -89,7 +93,7 @@ ul {
 }
 
 .s2 {
-    background-color: white;
+    background-color: var(--previewShadow);
     border-bottom: 1px solid var(--borderColor);
     overflow: auto;
 }
@@ -106,6 +110,7 @@ ul {
     align-content: center;
     background-color: var(--mainColor);
     width: full;
+    color:#fff
 }
 
 .intro-wrapper {
@@ -162,6 +167,10 @@ ul {
 
 #dot-3{
     background-color: #2aca3e;
+}
+
+#navigation a{
+    color: var(--mainText);
 }
 
 #navigation{
@@ -260,34 +269,6 @@ ul {
     padding: 15px;
 }
 
-.corner{
-    width: 7px;
-    height: 7px;
-    border-radius: 50px;
-    border: 1.5px solid #17a2b8;
-    background-color: #7e4c74;
-    position: relative;
-}
-
-#corner-tl{
-    top: -5px;
-    left: -5px
-}
-
-#corner-tr{
-    top: -5px;
-    right: -5px
-}
-#corner-br{
-    bottom: -5px;
-    right: -5px
-}
-
-#corner-bl{
-    bottom: -5px;
-    left: -5px
-}
-
 .about-wrapper{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -343,19 +324,19 @@ ul {
 }
 
 .post-preview{
-    background-color: white;
+    background-color: var(--previewShadow);
     padding: 15px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
 
 .post-title{
-    color:black;
+    text-decoration:var(--secondaryColor);
     margin: 0px;
 }
 
 .post-intro{
-    color: var(--normalText);
+    text-decoration: var(--normalText);
     font-size: 14px;
 }
 
